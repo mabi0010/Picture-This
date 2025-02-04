@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +15,43 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+  <picture>
+    <source srcset="images/museum-320x.jpg x1,
+                    images/museum-640x.jpg x2,
+                    images/museum-960x.jpg x3"
+                    media="(max-width: 320px)"/>
+    <source srcset="images/museum-480x.jpg x1,
+                    images/museum-960x.jpg x2,
+                    images/museum-1440xjpg x3"
+                    media="(max-width: 480px)"/>  
+   <source srcset="images/museum-720x.jpg x1,
+                    images/museum-1440x.jpg x2,
+                    images/museum-2160x.jpg x3"
+                    media="(max-width: 720px)"/> 
+    <source srcset="images/museum-960x.jpg x1,
+                    images/museum-1920x.jpg x2,
+                    images/museum-2880x.jpg x3"
+                    media="(max-width: 960px)"/> 
+                    
 
+    <source srcset="images/museum-800x800.jpg x1,
+                    images/museum-1600x1600.jpg x2,
+                    images/museum-2400x2400.jpg x3"
+                    media="(min-width: 1600px)"/>
+    <source srcset="images/museum-640x640.jpg x1,
+                    images/museum-1280x1280.jpg x2,
+                    images/museum-1920x1920.jpg x3"
+                    media="(min-width: 1280px)"/>  
+    <source srcset="images/museum-480x480.jpg x1,
+                    images/museum-960x960.jpg x2,
+                    images/museum-1440x1440.jpg x3"
+                    media="(min-width: 960px)"/>            
+                    
+  <img src="images/museum.jpg" alt="museum">
+  </picture>
+   
   </header>
+  
 </body>
 
 </html>
